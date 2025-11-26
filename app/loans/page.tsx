@@ -1,5 +1,5 @@
+"use client";
+
 export default function Loans() {
-    return(
-        Loans
-    )
+  return <h1>Loans</h1>;
 }
