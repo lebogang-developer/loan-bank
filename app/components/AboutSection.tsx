@@ -4,8 +4,6 @@ import { FaCar, FaHome, FaGraduationCap, FaWallet } from "react-icons/fa";
 import { useRouter } from 'next/navigation';
 
 
-
-
 export default function AboutSection() {
 
   const router = useRouter();

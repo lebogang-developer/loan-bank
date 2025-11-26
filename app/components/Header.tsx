@@ -85,7 +85,7 @@ export default function Header() {
             Contact
           </Link>
           <Link
-            href="/login"
+            href="/sign-in"
             className="px-4 py-1 ml-10 bg-green-600 hover:bg-green-700 text-white rounded-xl"
             onClick={() => setOpen(false)}
           >
