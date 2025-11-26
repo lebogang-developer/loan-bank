@@ -54,7 +54,7 @@ export default function Footer() {
           <ul className="text-sm space-y-2">
             <li>
               <FaEnvelope className="text-green-600" size={20} />{" "}
-              info@leanofinance.com
+              info@fintrustbank.co.za
             </li>
 
             <li>
