@@ -1,7 +1,11 @@
 "use client";
+
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import {UserButton, SignedIn, SignedOut } from "@clerk/nextjs"
+
+
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -28,12 +32,32 @@ export default function Header() {
           <Link href="/contact" className="hover:text-green-600">
             Contact
           </Link>
-          <Link
-            href="/login"
-            className="px-4 py-1 bg-green-600 hover:bg-green-700 text-white rounded-xl"
-          >
-            Login
-          </Link>
+          
+            {/* AUTH BUTTONS */}
+          
+          {/* When user is logged out */}
+          <SignedOut>
+            <Link
+              href="/sign-in"
+              className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
+            >
+              Login
+            </Link>
+          </SignedOut>
+
+          {/* When user is logged in */}
+          <SignedIn>
+            {/* Dashboard link */}
+            <Link
+              href="/dashboard"
+              className="text-green-600 font-medium hover:underline"
+            >
+              Dashboard
+            </Link>
+
+            {/* Clerk User Button (includes logout) */}
+            <UserButton afterSignOutUrl="/" />
+          </SignedIn>
         </div>
 
         {/* Mobile Menu Button */}
