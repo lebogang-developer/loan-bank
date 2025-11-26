@@ -1,11 +1,17 @@
 "use client";
 
+import { useRouter } from 'next/navigation';
+
+
+
 import { useState } from "react";
 import { Car, Home, BookOpen, UserCheck } from "lucide-react";
 
 export default function LoansPage() {
   const [salary, setSalary] = useState<number | "">("");
   const [loanAmount, setLoanAmount] = useState<number | null>(null);
+
+  const router = useRouter();
 
   // Simple eligibility calculator logic
   const calculateEligibility = () => {
@@ -47,7 +53,7 @@ export default function LoansPage() {
       requirements: [
         "Valid South African ID",
         "Acceptance letter from your university",
-        "Payslip (if applicable) or proof of guardianship income",
+        "Payslip or proof of guardianship income",
       ],
     },
   ];
@@ -120,7 +126,7 @@ export default function LoansPage() {
 
       {/* Apply Now Button */}
       <div className="text-center">
-        <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold shadow-md transition">
+        <button  onClick={() => router.push('/apply-loan')} className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold shadow-md transition">
           Apply for a Loan
         </button>
       </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import { ClerkProvider } from "@clerk/nextjs/app-beta";
+import { ClerkProvider } from '@clerk/nextjs';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
@@ -34,7 +34,7 @@ export default function RootLayout({
       >
         <main className="min-h-screen max-w-7xl mx-auto px-4 py-6">
           <Header />
-          {children}
+          <ClerkProvider>{children}</ClerkProvider>
           <Footer />
         </main>
       </body>

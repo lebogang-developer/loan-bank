@@ -36,7 +36,7 @@ export default function AboutPage() {
         {/* Image */}
         <div className="flex justify-center">
           <Image
-            src="/bank-hero.jpg"
+            src="/images/bank-hero.jpg"
             alt="FinTrust Bank Office"
             width={500}
             height={350}

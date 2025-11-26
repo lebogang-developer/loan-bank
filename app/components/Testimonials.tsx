@@ -9,19 +9,19 @@ const testimonials = [
     name: "Thabo Molefe",
     role: "Car Loan Client",
     text: "FinTrust Bank made my car loan approval fast and stress-free. Their process is transparent and the interest rates are fair. Highly recommended!",
-    image: "/thabo.jpg",
+    image: "/images/thabo.jpg",
   },
   {
     name: "Lerato Mokoena",
     role: "Home Loan Client",
     text: "I managed to secure my first home with the help of FinTrust Bank. The team guided me step by step, and the communication was excellent.",
-    image: "/lerato.jpg",
+    image: "/images/lerato.jpg",
   },
   {
     name: "Kabelo Nkosi",
     role: "Study Loan Client",
     text: "The study loan helped me pay my university fees with flexible repayment options. Thank you for making education more accessible!",
-    image: "/kabelo.jpg",
+    image: "/images/kabelo.jpg",
   },
 ];
 

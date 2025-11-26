@@ -1,6 +1,15 @@
+'use client'
+
 import { FaCar, FaHome, FaGraduationCap, FaWallet } from "react-icons/fa";
+import { useRouter } from 'next/navigation';
+
+
+
 
 export default function AboutSection() {
+
+  const router = useRouter();
+
   return (
     <section className="w-full bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -61,7 +70,7 @@ export default function AboutSection() {
 
         {/* CTA Button */}
         <div className="text-center mt-14">
-          <button className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold rounded-xl transition">
+          <button onClick={() => router.push('/apply-loan')} className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold rounded-xl transition">
             Apply Now
           </button>
         </div>
