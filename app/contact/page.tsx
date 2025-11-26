@@ -57,7 +57,7 @@ export default function Contact() {
                 Message
               </label>
               <textarea
-                rows="5"
+                // rows="5"
                 placeholder="Write your message"
                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-green-500"
               ></textarea>
