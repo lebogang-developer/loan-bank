@@ -2,10 +2,9 @@
 
 import { useRouter } from "next/navigation";
 
-const router = useRouter();
-
 export default function HeroSection() {
-  
+  const router = useRouter();
+
   return (
     <section className="w-full bg-white">
       <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
