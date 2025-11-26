@@ -20,7 +20,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
           {/* Car Loan */}
           <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
-            <FaCar className="text-blue-600 mx-auto" size={40} />
+            <FaCar className="text-green-600 mx-auto" size={40} />
             <h3 className="text-xl font-semibold mt-4">Car Loans</h3>
             <p className="mt-2 text-gray-600">
               Get approved for a vehicle loan with competitive interest rates
@@ -30,7 +30,7 @@ export default function AboutSection() {
 
           {/* Home Loan */}
           <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
-            <FaHome className="text-blue-600 mx-auto" size={40} />
+            <FaHome className="text-green-600 mx-auto" size={40} />
             <h3 className="text-xl font-semibold mt-4">Home Loans</h3>
             <p className="mt-2 text-gray-600">
               Finance your dream home with our affordable and convenient
@@ -40,7 +40,7 @@ export default function AboutSection() {
 
           {/* Study Loan */}
           <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
-            <FaGraduationCap className="text-blue-600 mx-auto" size={40} />
+            <FaGraduationCap className="text-green-600 mx-auto" size={40} />
             <h3 className="text-xl font-semibold mt-4">Study Loans</h3>
             <p className="mt-2 text-gray-600">
               Invest in your education with low-interest student loans that
@@ -50,7 +50,7 @@ export default function AboutSection() {
 
           {/* Personal Loan */}
           <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
-            <FaWallet className="text-blue-600 mx-auto" size={40} />
+            <FaWallet className="text-green-600 mx-auto" size={40} />
             <h3 className="text-xl font-semibold mt-4">Personal Loans</h3>
             <p className="mt-2 text-gray-600">
               Cover personal expenses with fast-approved loans tailored to your
@@ -61,7 +61,7 @@ export default function AboutSection() {
 
         {/* CTA Button */}
         <div className="text-center mt-14">
-          <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold rounded-xl transition">
+          <button className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold rounded-xl transition">
             Apply Now
           </button>
         </div>
