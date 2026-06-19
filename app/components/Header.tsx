@@ -7,7 +7,7 @@ import {UserButton, SignedIn, SignedOut } from "@clerk/nextjs"
 
 
 
-export default function Header() {
+const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -96,3 +96,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;

@@ -30,7 +30,7 @@ const steps = [
   },
 ];
 
-export default function HowItWorks() {
+const HowItWorks = () => {
   return (
     <section className="w-full bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -66,3 +66,5 @@ export default function HowItWorks() {
     </section>
   );
 }
+
+export default HowItWorks;

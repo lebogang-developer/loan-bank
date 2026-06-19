@@ -1,4 +1,6 @@
-export default function CTABanner() {
+import Link from "next/link";
+
+const CTABanner = () => {
   return (
     <section
       className="w-full py-16 
@@ -14,14 +16,17 @@ export default function CTABanner() {
           Fast approval • Secure process • 100% online
         </p>
 
-        <button
+        <Link
+          href="/loans"
           className="mt-6 px-10 py-3 bg-white text-green-700 
           font-semibold rounded-xl shadow-md 
-          hover:bg-gray-100 transition"
+        hover:bg-gray-100 transition inline-block"
         >
           Apply Now
-        </button>
+        </Link>
       </div>
     </section>
   );
 }
+
+export default CTABanner;

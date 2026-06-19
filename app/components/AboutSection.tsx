@@ -4,7 +4,7 @@ import { FaCar, FaHome, FaGraduationCap, FaWallet } from "react-icons/fa";
 import { useRouter } from 'next/navigation';
 
 
-export default function AboutSection() {
+const AboutSection = () => {
 
   const router = useRouter();
 
@@ -68,7 +68,7 @@ export default function AboutSection() {
 
         {/* CTA Button */}
         <div className="text-center mt-14">
-          <button onClick={() => router.push('/apply-loan')} className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold rounded-xl transition">
+          <button onClick={() => router.push('/loans')} className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold rounded-xl transition">
             Apply Now
           </button>
         </div>
@@ -76,3 +76,5 @@ export default function AboutSection() {
     </section>
   );
 }
+
+export default AboutSection;

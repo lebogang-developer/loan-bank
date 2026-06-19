@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 
-export default function Contact() {
+const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-20 px-6">
       {/* Page Header */}
@@ -116,4 +116,6 @@ export default function Contact() {
       </div>
     </div>
   );
-}
+};
+
+export default Contact;

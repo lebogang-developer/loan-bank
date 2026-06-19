@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 
-export default function HeroSection() {
+const HeroSection = () => {
   const router = useRouter();
 
   return (
@@ -20,7 +20,7 @@ export default function HeroSection() {
           </p>
 
           <button
-            onClick={() => router.push("/apply-loan")}
+            onClick={() => router.push("/loans")}
             className="mt-6 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-xl font-semibold transition-all"
           >
             Apply for a Loan
@@ -39,3 +39,5 @@ export default function HeroSection() {
     </section>
   );
 }
+
+export default HeroSection;
