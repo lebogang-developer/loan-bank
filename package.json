@@ -11,19 +11,21 @@
   "dependencies": {
     "@clerk/nextjs": "^6.35.5",
     "@hookform/resolvers": "^5.2.2",
-    "@prisma/client": "^7.0.0",
+    "@neondatabase/serverless": "^1.1.0",
+    "@prisma/client": "^7.8.0",
+    "@uploadthing/react": "^7.3.3",
     "axios": "^1.13.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.24",
     "lucide-react": "^0.554.0",
     "next": "16.0.4",
     "pg": "^8.16.3",
-    "prisma": "^7.0.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-hook-form": "^7.66.1",
     "react-icons": "^5.6.0",
-    "react-toastify": "^11.0.5",
+    "react-toastify": "^11.1.0",
+    "uploadthing": "^7.7.4",
     "zod": "^4.1.13"
   },
   "devDependencies": {
@@ -36,6 +38,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.0.4",
     "postcss": "^8.5.6",
+    "prisma": "^7.8.0",
     "tailwindcss": "^4.1.17",
     "typescript": "^5"
   },
@@ -46,7 +49,7 @@
     "url": "git+https://github.com/lebogang-developer/loan-bank.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Lebogang Sekaleli",
   "license": "ISC",
   "type": "module",
   "bugs": {

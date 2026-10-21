@@ -1,9 +1,6 @@
 "use client";
 
 import { useRouter } from 'next/navigation';
-
-
-
 import { useState } from "react";
 import { Car, Home, BookOpen, UserCheck } from "lucide-react";
 

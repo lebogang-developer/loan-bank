@@ -84,13 +84,14 @@ const Header = () => {
           <Link href="/contact" onClick={() => setOpen(false)}>
             Contact
           </Link>
-          <Link
+          
+          {/* <Link
             href="/sign-in"
             className="px-4 py-1 ml-10 bg-green-600 hover:bg-green-700 text-white rounded-xl"
             onClick={() => setOpen(false)}
           >
             Login
-          </Link>
+          </Link> */}
         </div>
       )}
     </header>

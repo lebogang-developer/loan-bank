@@ -1,0 +1,54 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model ContactForm {
+  id        String   @id @default(uuid())
+  name      String
+  email     String
+  phone     String
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model ApplyLoan {
+  id          String @id @default(uuid())
+  clerkUserId String
+
+  // Personal information
+  name  String
+  email String
+  phone String
+
+  // Loan information
+  loanType   String
+  loanAmount Decimal @db.Decimal(14, 2)
+  status     String  @default("PENDING")
+
+  // Financial information
+  employmentStatus String
+  monthlyIncome    Decimal @db.Decimal(14, 2)
+
+  // Loan-specific information
+  carModel        String?
+  propertyAddress String?
+  varsityName     String?
+  studyProgram    String?
+
+  // Private document storage keys
+  idCopyKey         String?
+  payslipKey        String?
+  proofOfAddressKey String?
+  varsityLetterKey  String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([clerkUserId])
+  @@index([status])
+}

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "FinTrust Bank",
   description:
-    "A Banking App to apply for a Loan. Apply for loans easily and securely.",
+    "Micro-lenders loan application system. Apply for loans easily and securely.",
 };
 
 export default function RootLayout({

@@ -1,4 +1,7 @@
+'use client'
+
 import { Mail, Phone, MapPin } from "lucide-react";
+import { saveFormData } from '../actions'
 
 const Contact = () => {
   return (
@@ -9,7 +12,7 @@ const Contact = () => {
           Contact Us
         </h1>
         <p className="text-gray-600 text-lg mt-2">
-          We're here to assist you — get in touch anytime.
+          We are here to assist you — get in touch anytime.
         </p>
       </div>
 
@@ -17,8 +20,8 @@ const Contact = () => {
         {/* Contact Form */}
         <div className="bg-white rounded-2xl shadow p-8">
           <h2 className="text-2xl font-semibold mb-6">Send Us a Message</h2>
-
-          <form className="space-y-5">
+          
+          <form action={saveFormData} className="space-y-5">
             <div>
               <label className="block text-gray-700 mb-1 font-medium">
                 Full Name
